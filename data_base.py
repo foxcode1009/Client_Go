@@ -77,17 +77,6 @@ def DDBB():
 
     # guardamos los cambio
     conexion.commit()
-    """
-    
-    cursor.execute("SELECT SUM(precio) FROM productos")
-    dato = cursor.fetchall()
-    conexion.commit()
-    print(dato)
-    
-
-    cursor.execute("DELETE FROM usuarios")
-    conexion.commit()
-    """
 
     # cerramos la base de datos para que no de errores
     conexion.close()
