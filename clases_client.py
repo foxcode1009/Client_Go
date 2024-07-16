@@ -13,12 +13,6 @@ import sys
 """"
 Lo que vamos a crear el un programa que nos permita agregar productoa una base de datos
 para llevar el control de stock de un negocio.
-
-crear la clase para el usuario.
-crear la clase para la interfaz.
-crear la clase para la interfaz de el login.
-registrar el usuario.
-hacer el login
 """
 conexion = sqlite3.connect("client_GO.db")
 cursor = conexion.cursor()
@@ -46,14 +40,14 @@ class Iniciosesion:
             return os.path.join(sys._MEIPASS, ruta_relativa)
         return os.path.join(os.path.abspath('.'), ruta_relativa)
 
-    # se esconde ell framee de registro y se muestra el de inicio de sesion
+    # se oculta el frame de registro y se muestra el de inicio de sesion
     def mostrar_inicio_sesion(self):
 
         self.frame_registro.place_forget()
         self.frame_inicio.place(x=0, y=0, width=350, height=400)
         self.root_sesion.title('Iniciar sesion')
 
-    # este es el inicio de sesion
+    # el inicio de sesion
     def inicio(self):
 
         self.root_sesion = Tk()
