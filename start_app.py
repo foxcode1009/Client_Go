@@ -1,5 +1,5 @@
 # aqui estara el inicio de el codigo
-from clases_client import Iniciosesion
+from Main import Iniciosesion
 from data_base import DDBB
 
 # PRIMERO CREAMOS LA BASE DE DATOS Y LUEGO SE EJECUTA EL PROGRAMA
